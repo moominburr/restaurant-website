@@ -4,14 +4,18 @@
   box-sizing: border-box;
   font-family: "Urbanist", sans-serif;
 }
+.nav-li-active {
+  color: red !important;
+  transition: all 0.3s ease;
 
+}
 .nav-links {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
   li {
     text-decoration: none;
-    color: red;
+    color: black;
     font-size: 2em;
     transition: all 0.2s ease;
     cursor: pointer;
@@ -20,6 +24,7 @@
     }
   }
 }
+
 ul {
   list-style: none;
   display: flex;

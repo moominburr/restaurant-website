@@ -6,6 +6,12 @@
   font-family: "Urbanist", sans-serif;
 }
 
+.nav-li-active {
+  color: red !important;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .nav-links {
   list-style: none;
   display: -webkit-box;
@@ -18,7 +24,7 @@
 
 .nav-links li {
   text-decoration: none;
-  color: red;
+  color: black;
   font-size: 2em;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
