@@ -56,8 +56,8 @@ ul {
       grid-template-areas: "subheading subheading" "beerImg homeCopy";
   width: 100vw;
   height: 80vh;
-  -webkit-animation: opacityIn 0.15s linear 1 forwards;
-          animation: opacityIn 0.15s linear 1 forwards;
+  -webkit-animation: opacityIn 0.2s ease-in 1 forwards;
+          animation: opacityIn 0.2s ease-in 1 forwards;
 }
 
 .heading,
@@ -115,25 +115,33 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   height: 80vh;
-  -webkit-animation: opacityIn 0.15s linear 1 forwards;
-          animation: opacityIn 0.15s linear 1 forwards;
+  -webkit-animation: opacityIn 0.2s ease-in 1 forwards;
+          animation: opacityIn 0.2s ease-in 1 forwards;
 }
 
 @-webkit-keyframes opacityIn {
   0% {
     opacity: 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   100% {
     opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes opacityIn {
   0% {
     opacity: 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   100% {
     opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 /*# sourceMappingURL=style.css.map */
