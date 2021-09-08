@@ -1,4 +1,6 @@
 /node_modules
+style.scss
+style.css.map
 # Compiled source #
 ###################
 *.com
