@@ -27,35 +27,39 @@ ul {
 }
 
 .home-content {
+  margin: 1em;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-
     "subheading subheading"
     "beerImg homeCopy";
-    width: 100vw;
-    height: 80vh;
+  width: 100vw;
+  height: 80vh;
 }
-.heading, .subheading, .home-copy {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.heading,
+.subheading,
+.home-copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .heading {
-    font-size: 6em;
+  font-size: 6em;
+  margin-bottom: 20px;
 }
 .subheading {
-    grid-area: subheading;
-    font-size: 2em;
+  grid-area: subheading;
+  font-size: 2em;
 }
 .beer-img {
-    grid-area: beerImg;
-    width: 100%;
-    height: 100%;
+  grid-area: beerImg;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 0 20px;
 }
 .home-copy {
-    grid-area: homeCopy;
-    text-align: center;
-    padding: 1rem;
+  grid-area: homeCopy;
+  text-align: center;
+  padding: 1rem;
 }

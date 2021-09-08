@@ -6,7 +6,7 @@ export default function Nav() {
     let li = document.createElement("li");
     li.innerText = link;
     li.classList.add("nav-li");
-
+    li.setAttribute('id', link);
     ul.appendChild(li);
   });
 
