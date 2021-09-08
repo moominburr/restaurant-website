@@ -41,6 +41,7 @@ ul {
     "beerImg homeCopy";
   width: 100vw;
   height: 80vh;
+  animation: opacityIn 0.15s linear 1 forwards;
 }
 .heading,
 .subheading,
@@ -67,4 +68,20 @@ ul {
   grid-area: homeCopy;
   text-align: center;
   padding: 1rem;
+}
+.menu, .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  animation: opacityIn 0.15s linear 1 forwards;
+}
+
+@keyframes opacityIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
