@@ -85,6 +85,7 @@ ul {
   -ms-grid-column-span: 2;
   grid-area: subheading;
   font-size: 2em;
+  padding: 1em;
 }
 
 .beer-img {
@@ -93,7 +94,7 @@ ul {
   grid-area: beerImg;
   width: 100%;
   height: 100%;
-  border-radius: 0 0 0 20px;
+  border-radius: 20px;
 }
 
 .home-copy {
@@ -102,6 +103,7 @@ ul {
   grid-area: homeCopy;
   text-align: center;
   padding: 1rem;
+  font-size: 1.4em;
 }
 
 .menu, .contact {
@@ -114,9 +116,61 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80vh;
   -webkit-animation: opacityIn 0.2s ease-in 1 forwards;
           animation: opacityIn 0.2s ease-in 1 forwards;
+}
+
+.menu {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu h3 {
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+.menu h3::before {
+  content: '';
+  position: absolute;
+  border-width: 3px 0 3px 0;
+  border-color: black;
+  border-style: solid;
+  height: 2em;
+  left: 20%;
+  top: 1em;
+  width: 60vw;
+}
+
+.item-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.item-card h4 {
+  font-size: 1.2em;
+  padding: 1em 0 0.5em 0;
+  position: relative;
+}
+
+.item-card p {
+  font-size: 1.2em;
+  padding: 0.5em;
 }
 
 @-webkit-keyframes opacityIn {
