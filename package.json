@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --watch",
+    "watch": "webpack --progress --watch",
     "start": "webpack serve --open",
-    "build": "webpack"
+    "build": "webpack --progress --mode=production"
   },
   "author": "Katherine Burr",
   "license": "ISC",
