@@ -5,7 +5,7 @@ export default function Menu() {
     const menu = document.createElement('div');
     menu.classList.add('menu');
     const head = document.createElement('h3');
-    head.innerText = 'SUMMER MENU';
+    head.innerText = 'Summer Menu';
     menu.appendChild(head);
     const menuCard = document.createElement('div');
     menuCard.classList.add('menu-card');
